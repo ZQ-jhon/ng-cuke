@@ -1,30 +1,28 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Resume</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <style>@-webkit-keyframes spin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@-moz-keyframes spin{0%{-moz-transform:rotate(0)}100%{-moz-transform:rotate(360deg)}}@keyframes spin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}.spinner{position:fixed;top:0;left:0;width:100%;height:100%;z-index:1003;background: #000000;overflow:hidden}  .spinner div:first-child{display:block;position:relative;left:50%;top:50%;width:150px;height:150px;margin:-75px 0 0 -75px;border-radius:50%;box-shadow:0 3px 3px 0 rgba(255,56,106,1);transform:translate3d(0,0,0);animation:spin 2s linear infinite}  .spinner div:first-child:after,.spinner div:first-child:before{content:'';position:absolute;border-radius:50%}  .spinner div:first-child:before{top:5px;left:5px;right:5px;bottom:5px;box-shadow:0 3px 3px 0 rgb(255, 228, 32);-webkit-animation:spin 3s linear infinite;animation:spin 3s linear infinite}  .spinner div:first-child:after{top:15px;left:15px;right:15px;bottom:15px;box-shadow:0 3px 3px 0 rgba(61, 175, 255,1);animation:spin 1.5s linear infinite}</style>
-</head>
+  <style>body{padding: 0;margin: 0; background: #e1e1e1;}.spinner { margin: 100px auto; width: 90px; height: 90px; position: relative; text-align: center; -webkit-animation: rotate 2.0s infinite linear; animation: rotate 2.0s infinite linear; } .dot1, .dot2 { width: 60%; height: 60%; display: inline-block; position: absolute; top: 0; background-color: #67CF22; border-radius: 100%; -webkit-animation: bounce 2.0s infinite ease-in-out; animation: bounce 2.0s infinite ease-in-out; } .dot2 { top: auto; bottom: 0px; -webkit-animation-delay: -1.0s; animation-delay: -1.0s; } @-webkit-keyframes rotate { 100% { -webkit-transform: rotate(360deg) }} @keyframes rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }} @-webkit-keyframes bounce { 0%, 100% { -webkit-transform: scale(0.0) } 50% { -webkit-transform: scale(1.0) } } @keyframes bounce { 0%, 100% { transform: scale(0.0); -webkit-transform: scale(0.0); } 50% { transform: scale(1.0); -webkit-transform: scale(1.0); } }</style>
+  </head>
+
 <body>
   <app-root>
-      <!-- <div style="display: flex; height:100%;width:100%; align-items: center;justify-content: center">
-          <h1>
-            <i nz-icon type="loading" theme="outline"></i>
-            Loading...
-          </h1>
-        </div> -->
-  <div id="nb-global-spinner" class="spinner">
-    <div class="blob blob-0"></div>
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
-    <div class="blob blob-4"></div>
-    <div class="blob blob-5"></div>
-  </div>
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+              <h3 style="text-align: center;">
+                  welcome to view ZQ-jhon's resume.
+                  plz wait a moment.
+              </h3>
+
+
   </app-root>
 
 </body>
+
 </html>
