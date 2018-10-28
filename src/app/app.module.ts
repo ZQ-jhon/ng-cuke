@@ -1,18 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
-import { NgZorroAntModule } from 'ng-zorro-antd';
+import { NgZorroAntdModule } from 'ng-zorro-antd';
+import { AppRoutingModule } from './app.routing.module';
+import { HelloComponent } from './app-entry/hello.component';
 
+const COMPONENTS = [
+  AppComponent,
+  HelloComponent,
+]
 @NgModule({
   declarations: [
-    AppComponent
+    ...COMPONENTS
   ],
   imports: [
     BrowserModule,
-    NgZorroAntdModule
+    NgZorroAntdModule,
+    AppRoutingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
