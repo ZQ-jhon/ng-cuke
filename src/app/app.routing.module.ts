@@ -9,7 +9,7 @@ const Route: Routes = [
   { path: '', redirectTo: 'index', pathMatch: 'full' },
   { path: 'index', component: HelloComponent },
   { path: '**', redirectTo: 'index', pathMatch: 'full' }
-]
+];
 @NgModule({
   imports: [
     RouterModule.forRoot(Route),

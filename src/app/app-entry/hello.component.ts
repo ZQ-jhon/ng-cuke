@@ -29,7 +29,7 @@ export class HelloComponent implements OnInit {
   constructor() { }
   isOpen = true;
   toggle(event: Event) {
-    this.isOpen = !this.isOpen
+    this.isOpen = !this.isOpen;
   }
   ngOnInit() { }
 }

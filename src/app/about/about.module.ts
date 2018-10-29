@@ -4,7 +4,7 @@ import { AboutComponent } from './about.component';
 
 const Component = [
   AboutComponent,
-]
+];
 @NgModule({
   imports: [
     AboutRoutingModule,

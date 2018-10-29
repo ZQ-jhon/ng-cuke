@@ -10,7 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 const COMPONENTS = [
   AppComponent,
   HelloComponent,
-]
+];
 @NgModule({
   declarations: [
     ...COMPONENTS
