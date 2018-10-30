@@ -24,7 +24,8 @@
     "core-js": "^2.5.4",
     "ng-zorro-antd": "^1.8.0",
     "rxjs": "~6.2.0",
-    "zone.js": "~0.8.26"
+    "zone.js": "~0.8.26",
+    "pace-js": "1.0.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.8.0-rc.0",
@@ -45,6 +46,7 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
-    "typescript": "~2.9.2"
+    "typescript": "~2.9.2",
+    "pace-js": "1.0.2"
   }
 }

@@ -29,9 +29,12 @@
             ],
             "styles": [
               "node_modules/ng-zorro-antd/ng-zorro-antd.min.css",
-              "src/styles.scss"
+              "src/theme/styles.scss",
+              "node_modules/pace-js/templates/pace-theme-flash.tmpl.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/pace-js/pace.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -79,9 +82,12 @@
             "karmaConfig": "src/karma.conf.js",
             "styles": [
               "node_modules/ng-zorro-antd/ng-zorro-antd.min.css",
-              "src/styles.scss"
+              "src/theme/styles.scss",
+              "node_modules/pace-js/templates/pace-theme-flash.tmpl.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/pace-js/pace.min.js"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"
