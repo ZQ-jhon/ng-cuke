@@ -1,15 +1,13 @@
-<div class="container-fluid" [@openClose]="isOpen ? 'open' : 'closed'">
-  Hello
+<div class="container-fluid" >
 
-  <button routerLink="/about" routerLinkActive="router-link-active"  class="btn btn-info">
-    About
-  </button>
-  <button (click)="toggle($event)" class="btn btn-success">
-    toggle
-  </button>
+  <div class="container" (mouseleave)="handleCardHover($event)" (mouseenter)="handleCardHover($event)" [@cardHoverAnimate]="isHover ? 'addHover' : 'cancelHover'">
+      cirecle - container
+  </div>
 
-  <div class="circle">
 
+  <div class="container">
+      <div class="cirecle" (mouseenter)="toggle($event)" (mouseleave)="toggle($event)"  [@openClose]="isOpen ? 'open' : 'closed'">
+          cirecle
+      </div>
   </div>
 </div>
-

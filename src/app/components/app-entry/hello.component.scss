@@ -2,13 +2,18 @@
 $xs: 5px;
 $sm: 10px;
 $md: 12px;
+$lg: 16px;
 .container-fluid {
   // background: url(../../../assets/bg.png) 50% 0 no-repeat;
   // background-size: 70% 100%;
-  height: 100%;
   width: 100%;
 }
 
-.circle {
-
+.cirecle {
+  border-radius: 100%;
+  width: 5*$lg;
+  height: 5*$lg;
+  line-height: 5*$lg;
+  text-align: center;
+  border: 1px dashed black;
 }

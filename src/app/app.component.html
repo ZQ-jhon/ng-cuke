@@ -1,0 +1,35 @@
+<ul nz-menu [nzMode]="'horizontal'" class="list-group" nz-row>
+  <li nz-menu-item routerLink="/home"  routerLinkActive="router-link-active"   nz-col
+  [nzXs]="{ span: 6, offset: 0 }" [nzLg]="{ span: 6, offset: 0 }" class="text-center">
+    <i nz-icon type="home"></i>
+    Home
+  </li>
+  <li nz-menu-item routerLink="/about"  routerLinkActive="router-link-active"  nz-col
+  [nzXs]="{ span: 6, offset: 0 }" [nzLg]="{ span: 6, offset: 0 }"   class="text-center">
+    <i nz-icon type="user"></i>
+    About
+  </li>
+  <li nz-menu-item routerLink="/projects"  routerLinkActive="router-link-active"  nz-col
+  [nzXs]="{ span: 6, offset: 0 }" [nzLg]="{ span: 6, offset: 0 }" class="text-center">
+    <span title><i nz-icon type="github"></i>
+      Projects
+    </span>
+  </li>
+
+  <li nz-submenu routerLink="/chat"  routerLinkActive="router-link-active"  nz-col
+  [nzXs]="{ span: 6, offset: 0 }" [nzLg]="{ span: 6, offset: 0 }" class="text-center">
+    <span title><i nz-icon type="contacts"></i> Chat</span>
+    <ul>
+      <li nz-menu-item>
+        <span title><i nz-icon type="qq"></i> qq</span>
+      </li>
+      <li nz-menu-item>
+        <span title><i nz-icon type="wechat"></i> wechat</span>
+      </li>
+      <li nz-menu-item>
+        <span title><i nz-icon type="github"></i>github</span>
+      </li>
+    </ul>
+  </li>
+</ul>
+<router-outlet></router-outlet>
