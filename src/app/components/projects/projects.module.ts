@@ -1,6 +1,7 @@
 import { ProjectsComponent } from './projects.component';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { ProjectsRoutingModule } from './projects.routing.module';
 
 const COMPONENTS = [
   ProjectsComponent,
@@ -10,7 +11,8 @@ const COMPONENTS = [
     ...COMPONENTS
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ProjectsRoutingModule,
   ],
 })
 export class ProjectsModule { }

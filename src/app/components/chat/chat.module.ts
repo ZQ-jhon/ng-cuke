@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { ChatComponent } from './chat.component';
+import { ChatRoutingModule } from './chat.routing.module';
 
 const COMPONENTS = [
   ChatComponent,
@@ -10,7 +11,11 @@ const COMPONENTS = [
     ...COMPONENTS
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ChatRoutingModule,
   ],
+  entryComponents: [
+    [...COMPONENTS],
+  ]
 })
 export class ChatModule { }
