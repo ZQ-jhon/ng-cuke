@@ -5,6 +5,10 @@ import { CommonModule } from '@angular/common';
 
 const routes: Routes = [
   { path: '', component: ChatComponent },
+  { path: 'qq', component: ChatComponent },
+  { path: 'wechat', component: ChatComponent },
+  { path: 'github', component: ChatComponent },
+
 ];
 
 @NgModule({

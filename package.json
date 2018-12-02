@@ -7,7 +7,10 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "lint:styles": "stylelint ./src/**/*.scss",
+    "lint:ci": "npm run lint && npm run lint:styles",
+    "lint:fix": "ng lint resume --fix && stylelint ./src/**/*.scss --fix"
   },
   "private": true,
   "dependencies": {
@@ -37,6 +40,12 @@
     "@types/node": "~8.9.4",
     "codelyzer": "~4.3.0",
     "jasmine-core": "~2.99.1",
+    "husky": {
+      "hooks": {
+        "pre-push": "npm run lint:ci",
+        "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      }
+    },
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~3.0.0",
     "karma-chrome-launcher": "~2.2.0",

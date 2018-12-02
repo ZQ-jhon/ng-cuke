@@ -1,9 +1,6 @@
-import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { RotateRoundAnimation } from 'src/app/animations/rotate-round.animate';
 import { CardHoverAnimate } from '../../animations/card-hover.animate';
-import { fromEvent } from 'rxjs';
-import { debounceTime } from 'rxjs/Operators';
 
 @Component({
   selector: 'hello',
@@ -16,20 +13,16 @@ import { debounceTime } from 'rxjs/Operators';
 })
 
 export class HelloComponent implements OnInit {
+  public isOpen = true;
+  public isHover = false;
   constructor() { }
-  isOpen = true;
-  isHover = false;
-  toggle(ev: Event) {
-    fromEvent(ev.target, ev.type).pipe(
-      debounceTime(500)
-    )
-    ev.preventDefault();
+  public toggle() {
     this.isOpen = !this.isOpen;
   }
 
-  handleCardHover({ type }) {
-    if (type === 'mouseenter') { this.isHover = true }
-    if (type === 'mouseleave') { this.isHover = false }
+  public handleCardHover({ type }) {
+    if (type === 'mouseenter') { this.isHover = true; }
+    if (type === 'mouseleave') { this.isHover = false; }
   }
-  ngOnInit() { }
+  public ngOnInit() { }
 }
