@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   styles: [`
     .list-detail {margin: 10px auto}
     li {outline: none;}
+    .text-center {text-align: center}
   `]
 })
 export class AppComponent {
