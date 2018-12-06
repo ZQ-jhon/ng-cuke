@@ -19,7 +19,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
-              "favicon.ico",
+              "src/favicon.ico",
               "src/assets",
               {
                 "glob": "**/*",
@@ -91,7 +91,7 @@
               "node_modules/pace-js/pace.min.js"
             ],
             "assets": [
-              "favicon.ico",
+              "src/favicon.ico",
               "src/assets"
             ]
           }
