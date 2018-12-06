@@ -1,12 +1,12 @@
 <div class="container-fluid" >
 
-  <div class="container" (mouseleave)="handleCardHover($event)" (mouseenter)="handleCardHover($event)">
+  <div (mouseleave)="handleCardHover($event)" (mouseenter)="handleCardHover($event)">
       <!-- [@cardHoverAnimate]="isHover ? 'addHover' : 'cancelHover'" -->
       cirecle - container
   </div>
 
 
-  <div class="container">
+  <div>
       <div class="cirecle" (mouseenter)="toggle()" (mouseleave)="toggle()"
       [@openClose]="isOpen ? 'open' : 'closed'">
           cirecle

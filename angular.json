@@ -19,7 +19,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
+              "favicon.ico",
               "src/assets",
               {
                 "glob": "**/*",
@@ -28,10 +28,10 @@
               }
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/ng-zorro-antd/ng-zorro-antd.min.css",
               "src/theme/styles.scss",
-              "node_modules/pace-js/templates/pace-theme-flash.tmpl.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "node_modules/pace-js/templates/pace-theme-flash.tmpl.css"
             ],
             "scripts": [
               "node_modules/pace-js/pace.min.js"
@@ -91,7 +91,7 @@
               "node_modules/pace-js/pace.min.js"
             ],
             "assets": [
-              "src/favicon.ico",
+              "favicon.ico",
               "src/assets"
             ]
           }

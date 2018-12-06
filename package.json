@@ -8,9 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "lint:styles": "stylelint ./src/**/*.scss",
-    "lint:ci": "npm run lint && npm run lint:styles",
-    "lint:fix": "ng lint ng-cuke --fix && stylelint ./src/**/*.scss --fix"
+    "lint:fix": "tslint -c tslint.json 'src/**/*.ts' --fix"
   },
   "private": true,
   "dependencies": {
@@ -56,7 +54,7 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-push": "npm run lint:ci"
+      "pre-push": "ng lint"
     }
   }
 }
