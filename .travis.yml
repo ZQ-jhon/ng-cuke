@@ -2,13 +2,13 @@ language: node_js
 node_js: stable
 
 install:
-- npm install -g gulp
+# - npm install -g gulp
 - npm install
 
 # - npm install -g gulp
 
 script:
-- ng build --prod
+- ng build --prod --base-href ./
 
 after_script:
 - git config user.name “ZQ-jhon”
