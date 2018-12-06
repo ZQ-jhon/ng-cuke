@@ -2,10 +2,7 @@ language: node_js
 node_js: stable
 
 install:
-# - npm install -g gulp
 - npm install
-
-# - npm install -g gulp
 
 script:
 - ng build --prod --base-href ./
@@ -15,11 +12,11 @@ after_script:
 - git config user.email “350037310@qq.com”
 - git add .
 - git commit -m “Update docs with TRAVIS-CI.”
-- git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
-
+- git push --force --quiet "https://${ng}@${GH_REF}" master:master
+# https://${ng}@${GH_REF}" master:master 第一个参数为 travis-cli 获取 token 的 value, 第二个为你设置的仓库地址
 branches:
 only:
-- hexo
+- develop
 env:
 global:
 - GH_REF: github.com/ZQ-jhon/ng-cuke.git
