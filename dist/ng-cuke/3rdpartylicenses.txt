@@ -378,6 +378,9 @@ MIT
 @angular/forms
 MIT
 
+ngx-skeleton-loader
+MIT
+
 core-js
 MIT
 Copyright (c) 2014-2018 Denis Pushkarev
