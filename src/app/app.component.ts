@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
     .text-center {text-align: center}
   `]
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
+  // public needHide = false;
+  public ngAfterViewInit() {
+    // this.needHide = true;
+  }
 }
