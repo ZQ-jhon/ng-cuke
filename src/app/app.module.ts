@@ -6,21 +6,22 @@ import { AppRoutingModule } from './app.routing.module';
 import { HelloComponent } from './components/app-entry/hello.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-
+import { NgxSkeletonLoaderModule } from 'node_modules/ngx-skeleton-loader';
 const COMPONENTS = [
   AppComponent,
   HelloComponent,
 ];
 @NgModule({
   declarations: [
-    ...COMPONENTS
+    ...COMPONENTS,
   ],
   imports: [
     BrowserModule,
-    NgZorroAntdModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
     HttpClientModule,
+    AppRoutingModule,
+    NgZorroAntdModule,
+    BrowserAnimationsModule,
+    NgxSkeletonLoaderModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
