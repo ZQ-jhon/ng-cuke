@@ -164,12 +164,12 @@
   dependencies:
     tslib "^1.9.0"
 
-"@angular/core@~7.1.0":
-  version "7.1.1"
-  resolved "http://registry.npm.taobao.org/@angular/core/download/@angular/core-7.1.1.tgz"
-  integrity sha1-l0iwEDzYYiZVThzL0PQ92MRvHtE=
+"@angular/core@~11.0.0":
+  version "11.0.9"
+  resolved "https://registry.yarnpkg.com/@angular/core/-/core-11.0.9.tgz#5e509af2d2580a07f9ddfe3b99ce86ae67689daf"
+  integrity sha512-J0ff3UK2Cw7Z0eNLtUXrpMFvmmkvPPZWLYIwimyc1pZys7qsIVT6cy2ybGEOhbJgC6qt3fo0DoJV3pGXTalb8A==
   dependencies:
-    tslib "^1.9.0"
+    tslib "^2.0.0"
 
 "@angular/forms@~7.1.0":
   version "7.1.1"
@@ -7083,6 +7083,11 @@ tslib@^1.7.1, tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.9.3"
   resolved "http://registry.npm.taobao.org/tslib/download/tslib-1.9.3.tgz"
   integrity sha1-1+TdeSRdhUKMTX5IIqeZF5VMooY=
+
+tslib@^2.0.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.4.0.tgz#7cecaa7f073ce680a05847aa77be941098f36dc3"
+  integrity sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==
 
 tslint@~5.11.0:
   version "5.11.0"
